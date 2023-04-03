@@ -1,8 +1,8 @@
 <template>
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/game">About</router-link>
-  </nav>
+  </nav> -->
   <div id="app">
     <router-view/>
   </div>
