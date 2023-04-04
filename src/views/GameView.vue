@@ -1,17 +1,23 @@
 <template>
-  <div class="about">
-     <h1>{{ this.$store.state.volume.toLocaleString('fr-FR', 
-        { maximumFractionDigits: 2 }) }}</h1>
-    <img src="@/assets/king.png" @click="this.$store.commit('CLICK')">
+  <div class="game">
+    <Clikcer></Clikcer>
     <ListCommodity></ListCommodity>
   </div>
 </template>
 <script>
   import ListCommodity from '@/components/ListCommodity.vue';
-
+  import Clikcer from '@/components/Clikcer.vue';
   export default{
     components:{
+      Clikcer,
       ListCommodity
     }
   }
 </script>
+<style scoped>
+    .game {
+        height: 100%;
+        background: white;
+        display: flex;
+    }    
+</style>

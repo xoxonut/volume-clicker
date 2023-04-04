@@ -39,24 +39,52 @@
   }
 </script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+    @import url('https://fonts.googleapis.com/css?family=Quicksand');
+    @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-nav {
-  padding: 30px;
-}
+    #app {
+        height: 100%;
+        background: #fff;
+        font-family: 'Quicksand', sans-serif;
+        overflow: hidden;
+    }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 60px;
+        color: #3e606f;
+    }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+    .btn-main {
+        border: solid 3px #3e606f;
+        background: transparent;
+        color: #3e606f;
+        padding: 15px 30px;
+        font-size: 20px;
+        border-radius: 9999px;
+        transition: all .2s;
+    }
+
+    .btn-main:hover {
+        background: #3e606f;
+        color: white;
+        padding: 15px 30px;
+        font-size: 20px;
+        border-radius: 9999px;
+        cursor: pointer;
+    }
+
+    .scale-up {
+        transform: scale(1.5);
+    }
 </style>
+<style scoped>
+  footer {
+    background: #F0B67F;
+    padding: 10px 5px;
+    height: 20px;
+  }
+</style>
+
+
